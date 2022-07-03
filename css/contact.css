@@ -499,12 +499,13 @@ textarea {
 .footer .container .footer-content .one {
     width: 340px;
 }
-.footer .container .footer-content .one h6 {
+.footer .container .footer-content .one div {
     font-size: 2.3em;
     color: var(--white-color);
     letter-spacing: -1px;
+    font-weight: bold;
 }
-.footer .container .footer-content .one h6 span {
+.footer .container .footer-content .one div span {
     color: var(--p-color);
 }
 .footer .container .footer-content .one p {
@@ -527,7 +528,7 @@ textarea {
     .footer .container .footer-content .one {
         margin-bottom: 40px;
     }
-    .footer .container .footer-content .one h6 {
+    .footer .container .footer-content .one div {
         font-size: 2em;
     }
     .footer .container .footer-content .one p {
@@ -539,7 +540,7 @@ textarea {
     }
 }
 @media (max-width:500px) {
-    .footer .container .footer-content .one h6 {
+    .footer .container .footer-content .one div {
         font-size: 1.6em;
     }
     .footer .container .footer-content .one p {
@@ -550,7 +551,7 @@ textarea {
 .footer .container .footer-content .two {
     width: 340px;
 }
-.footer .container .footer-content .two h6 {
+.footer .container .footer-content .two div {
     font-size: 1.6em;
     color: var(--white-color);
     margin-bottom: 20px;
@@ -572,7 +573,7 @@ textarea {
     transition: var(--transiton);
 }
 @media (max-width:767px) {
-    .footer .container .footer-content .two h6 {
+    .footer .container .footer-content .two div {
         font-size: 1.2em;
     }
 }
@@ -587,13 +588,13 @@ textarea {
         margin-top: 40px;
     }
 }
-.footer .container .footer-content .three h6 {
+.footer .container .footer-content .three div {
     font-size: 1.6em;
     margin-bottom: 30px;
     color: var(--white-color);
 }
 @media (max-width:767px) {
-    .footer .container .footer-content .three h6 {
+    .footer .container .footer-content .three div {
         font-size: 1.2em;
     }
 }

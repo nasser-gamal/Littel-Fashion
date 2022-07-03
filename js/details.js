@@ -8,7 +8,6 @@ let cardChi = Array.from(cardContent.children)
 cartBtn.onclick = function () {
   cardContent.classList.toggle("active");
   check.classList.toggle("active");
-  document.body.style.overflow = "hidden";
   };
 
 
