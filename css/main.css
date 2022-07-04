@@ -101,6 +101,39 @@ a {
 }
 /* End Components  */
 /* End Global Rules  */
+
+
+/*  Loading  */
+.loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top :0;
+  left: 0;
+  background-color: white;
+  z-index: 9999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+.loading.hidden {
+  transform: translateY(-100%);
+}
+.loading span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #00000080;
+  border-radius: 50%;
+  border-left-color: transparent;
+  animation: rotationLoading 1s linear infinite;
+}
+@keyframes rotationLoading {
+  to {
+    transform: rotate(360deg);
+  }
+}
 /* Start Header  */
 .header {
   background-color: white;
@@ -235,11 +268,15 @@ a {
   position: relative;
   transition: 1s;
 }
-@media (min-width: 1200px) {
-  .landing {
-  }
+.landing .override {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #08080842;
+  z-index: 1;
 }
-
 .landing .landing-info {
   width: 100%;
   height: 100%;
@@ -261,16 +298,6 @@ a {
 .landing .landing-info .image {
   position: relative;
 }
-/* .landing .image::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.253);
-  z-index: 1111;
-} */
 .landing .landing-info img {
   max-width: 100%;
   position: relative;
@@ -291,6 +318,7 @@ a {
   left: 80px;
   transform: translateY(-50%);
   transition: var(--transiton);
+  z-index: 1111;
 }
 
 @media (max-width: 575px) {
@@ -390,6 +418,7 @@ a {
   top: 50%;
   right: 40px;
   transform: translateY(-50%);
+  z-index: 11111;
 }
 @media (min-width: 1200px) {
   .landing .info {

@@ -101,6 +101,38 @@ a {
 }
 /* End Components  */
 /* End Global Rules  */
+
+/*  Loading  */
+.loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top :0;
+    left: 0;
+    background-color: white;
+    z-index: 9999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+  }
+  .loading.hidden {
+    transform: translateY(-100%);
+  }
+  .loading span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #00000080;
+    border-radius: 50%;
+    border-left-color: transparent;
+    animation: rotationLoading 1s linear infinite;
+  }
+  @keyframes rotationLoading {
+    to {
+      transform: rotate(360deg);
+    }
+  }
 /* Start Header  */
 .header {
     background-color: white;
